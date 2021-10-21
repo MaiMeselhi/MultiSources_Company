@@ -1,0 +1,88 @@
+$mainColor: #C3194D;
+$secColor: #514596;
+$gradient-lay: linear-gradient(to right, $mainColor, $secColor);
+
+$maxSmall: "(max-width: 575px)";
+$maxMobile: "(max-width: 767px)";
+$minSmall: "(min-width: 576px)";
+$minMobile: "(min-width: 768px)";
+$minMedium: "(min-width: 992px)";
+$minLarge: "(min-width: 1200px)";
+
+
+//OVERLAY
+@mixin overlay($color:$gradient-lay) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: $gradient-lay;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+//ANIMATION MIXIN
+@mixin keyFrame($animation-name) {
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+//OPACITY MIXIN
+@mixin opacity($value) {
+    zoom: 1;
+    $opacity-ie: $value * 100;
+    filter: alpha(opacity = $opacity-ie);
+    opacity: $value;
+}
+
+//PSEUDO ELEMENT
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+//VERTICAL CENTERING
+@mixin vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%vertical-center{
+    @include vertical-center()
+}
+
+//ABSOLUTE POSITIONING
+@mixin abs-position($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+//MAKING ARROW
+@mixin arrow($direction: down, $size: 5px, $color: #555) {
+    width: 0;
+    height: 0;
+    @if ($direction == left) {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+    } @else if ($direction == right) {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+    } @else if ($direction == down) {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+    } @else {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+    }
+}

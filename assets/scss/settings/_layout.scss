@@ -1,0 +1,32 @@
+@import "./vars";
+
+@font-face {
+	font-family:NotoKufiArabic-Regular;
+	src: url(../assets/Font/NotoKufiArabic-Regular.ttf);
+   font-family: NotoKufiArabic-Bold;
+   src:url(../assets/Font/NotoKufiArabic-Bold.ttf)
+}
+
+body {
+	font-family:NotoKufiArabic-Regular, sans-serif;
+}
+/*************
+    body
+*************/
+.container,
+body {
+    position: relative;
+}
+
+
+
+
+h5{
+    padding-top: 40px;
+ }
+ p{
+    font-size:0.9rem;
+   text-align: right;
+   padding-top: 0;
+
+ }

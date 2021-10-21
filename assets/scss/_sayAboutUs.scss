@@ -1,0 +1,85 @@
+
+section{
+   header{
+      .headerLine{
+         width:25%;
+         height:5px;
+         position: relative;
+         margin: auto;
+       }
+       .headerLine::after,.headerLine::before{
+         content: "";
+         position: absolute;
+         margin:auto;
+         height: 1px;
+         width: 45%;
+         top: 45%;
+         background-color:
+         #707070
+         ;
+      }
+
+
+      .headerLine::after{
+         left: 0;
+
+
+      }
+      .headerLine::before{
+         right: 0;
+      }
+      .circle{
+         height: 1px;
+         width:  1px;
+         border: 2px solid #707070;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         top: 0;
+         margin:auto;
+         border-radius: 50%;
+         background-color :
+         #707070;
+      }
+   }
+   .items{
+         .item{
+            img{
+               display: block;
+               margin: auto;
+               margin-bottom: -2rem;
+               }
+         figcaption{
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            .quotes{
+               width: 8%;
+               height: 8%;
+               margin-left: 10px;
+            }
+            .text__title{
+               color:
+               #9EA2AE
+               ;
+            }
+
+         }
+      }
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
