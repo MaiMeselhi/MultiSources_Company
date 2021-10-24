@@ -1,32 +1,151 @@
 @import "./vars";
 
 @font-face {
-	font-family:NotoKufiArabic-Regular;
-	src: url(../assets/Font/NotoKufiArabic-Regular.ttf);
-   font-family: NotoKufiArabic-Bold;
-   src:url(../assets/Font/NotoKufiArabic-Bold.ttf)
+  font-family: NotoKufiArabic-Regular;
+  src: url(../assets/Font/NotoKufiArabic-Regular.ttf);
+  font-family: NotoKufiArabic-Bold;
+  src: url(../assets/Font/NotoKufiArabic-Bold.ttf);
 }
 
 body {
-	font-family:NotoKufiArabic-Regular, sans-serif;
+  font-family: NotoKufiArabic-Bold, sans-serif;
 }
 /*************
     body
 *************/
-.container,
-body {
-    position: relative;
+p {
+  font-size: 0.9rem;
+  text-align: right;
+  padding-top: 0;
+
+}
+section {
+  header {
+    .headerLine {
+      width: 25%;
+      height: 5px;
+      position: relative;
+      margin: auto;
+    }
+    .headerLine::after,
+    .headerLine::before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      height: 1px;
+      width: 45%;
+      background-color: #707070;
+    }
+
+    .headerLine::after {
+      left: 0;
+      top: 0;
+    }
+    .headerLine::before {
+      right: 0;
+    }
+    .circle {
+      height: 1px;
+      width: 1px;
+      border: 2px solid #707070;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      border-radius: 50%;
+      background-color: #707070;
+    }
+  }
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
+/*************
+    a (link)
+*************/
+a {
+  outline: none;
+  color: inherit;
+  padding: 0 0.5rem;
+  text-decoration: none;
+}
 
+li {
+  padding: 0.25rem 0;
+  img {
+    color: #000;
+  }
+}
+footer {
+  .social {
+    li {
+      display: inline-block;
+    }
+  }
 
+  .links__list {
+    list-style: disc url("38specialPlusP.gif");
+    direction: rtl;
 
-h5{
-    padding-top: 40px;
- }
- p{
-    font-size:0.9rem;
-   text-align: right;
-   padding-top: 0;
+    a {
+      padding: 0;
+    }
+  }
+}
 
- }
+.paragraph {
+  padding-left: 8rem;
+}
+
+.logo_title{
+  line-height: 0;
+}
+@include mobile-xs {
+  .paragraph {
+    text-align: right;
+    padding-left: 1.5rem;
+  }
+  .social {
+    text-align: center;
+  }
+  .footer_logo{
+    flex-wrap: wrap;
+  }
+  .bord{
+   display: none;
+
+  }
+.arrow img{
+  display: block;
+margin: 0 auto;
+}
+.co_logo{
+  border-top: 1px solid
+
+  #ececf4;
+}
+}
+@include mobile-sm {
+  .paragraph {
+    text-align: right;
+    padding-left: 1.5rem;
+  }
+  .social {
+    text-align: center;
+  }
+  .location {
+    padding: 0 1rem;
+  }
+}
+@include tablet {
+  .paragraph {
+    padding-left: 0.5rem;
+  }
+  .social {
+    text-align: center;
+  }
+}

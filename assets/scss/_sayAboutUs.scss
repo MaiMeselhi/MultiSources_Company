@@ -13,7 +13,6 @@ section{
          margin:auto;
          height: 1px;
          width: 45%;
-         top: 45%;
          background-color:
          #707070
          ;
@@ -22,6 +21,7 @@ section{
 
       .headerLine::after{
          left: 0;
+         top: 0;
 
 
       }
@@ -51,11 +51,18 @@ section{
                }
          figcaption{
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-            .quotes{
-               width: 8%;
-               height: 8%;
-               margin-left: 10px;
+            border-radius: 0.2rem;
+            .quote{
+               width: 50%;
+               .quotes{
+
+                  display: inline-block;
+                  width: 20%;
+                  padding-left: 0.5rem;
+
+               }
             }
+
             .text__title{
                color:
                #9EA2AE

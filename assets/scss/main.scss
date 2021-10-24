@@ -1,3 +1,6 @@
-@import "./settings/_layout";
 @import "./settings/_vars";
+@import './settings/_mixins';
+
+@import "./settings/_layout";
+@import "./sponsors";
 @import "./sayAboutUs"
