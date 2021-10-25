@@ -1,93 +1,65 @@
+section {
+   header {
+     .headerLine {
+       width: 18.25rem;
+       height: 0;
+       position: relative;
+     }
+     .headerLine::after,
+     .headerLine::before {
+       content: '';
+       position: absolute;
+       margin: auto;
+       height: 2px;
+       top: 0;
+       width: 45%;
+       background-color: #7b808e;
+     }
 
-section{
-   header{
-      .headerLine{
-         width: 18.25rem;
-         height: 0;
-         position: relative;
-
+     .headerLine::after {
+       left: 0;
+     }
+     .headerLine::before {
+       right: 0;
+     }
+     .circle {
+       height: 0;
+       width: 0;
+       border: 2px solid #7b808e;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       top: 0;
+       margin: auto;
+       border-radius: 50%;
+       background-color: #707070;
+     }
+   }
+   .items {
+     .item {
+       width: 431px;
+       height: 241px;
+       img {
+         display: block;
+         margin: auto;
+         margin-bottom: -2rem;
        }
-       .headerLine::after,.headerLine::before{
-         content: "";
-         position: absolute;
-         margin:auto;
-         height: 2px;
-         top:0;
-         width: 45%;
-         background-color:
-         #7B808E
-         ;
-      }
-
-
-      .headerLine::after{
-         left: 0;
-
-
-
-      }
-      .headerLine::before{
-         right: 0;
-      }
-      .circle{
-         height:0;
-         width: 0;
-         border:2px solid #7B808E;
-         left: 0;
-         right: 0;
-         bottom: 0;
-         top: 0;
-         margin:auto;
-         border-radius: 50%;
-         background-color :
-         #707070;
-      }
-   }
-   .items{
-         .item{
-            img{
-               display: block;
-               margin: auto;
-               margin-bottom: -2rem;
-               }
-         figcaption{
-            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-            border-radius: 0.2rem;
-            .quote{
-               width: 50%;
-               .quotes{
-
-                  display: inline-block;
-                  width: 20%;
-                  padding-left: 0.5rem;
-
-               }
-            }
-
-            .text__title{
-               color:
-               #9EA2AE
-               ;
-            }
-
+       figcaption {
+         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+         border-radius: 0.2rem;
+         .quote {
+           width: 50%;
+           .quotes {
+             display: inline-block;
+             width: 20%;
+             padding-left: 0.5rem;
+           }
          }
-      }
+
+         .text__title {
+           color: #9ea2ae;
+         }
+       }
+     }
    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }

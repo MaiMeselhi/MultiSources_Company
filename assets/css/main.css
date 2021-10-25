@@ -1,17 +1,12 @@
-@font-face {
-  font-family: NotoKufiArabic-Regular;
-  src: url(../../Font/NotoKufiArabic-Regular.ttf);
-  font-family: NotoKufiArabic-Bold;
-  src: url(../assets/Font/NotoKufiArabic-Bold.ttf); }
-
-body {
-  font-family: NotoKufiArabic-Regular, sans-serif; }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap");
+* {
+  font-family: "Noto Kufi Arabic", sans-serif; }
 
 /*************
     body
 *************/
 p {
-  font-size: 0.9rem;
+  font-size: 12px;
   text-align: right;
   padding-top: 0; }
 
@@ -70,6 +65,9 @@ li {
 
 footer .social li {
   display: inline-block; }
+
+footer .footer_desc {
+  font-size: 10px; }
 
 footer .links__list {
   list-style: disc url("38specialPlusP.gif");
@@ -192,19 +190,21 @@ section header .circle {
   border-radius: 50%;
   background-color: #707070; }
 
-section .items .item img {
-  display: block;
-  margin: auto;
-  margin-bottom: -2rem; }
-
-section .items .item figcaption {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  border-radius: 0.2rem; }
-  section .items .item figcaption .quote {
-    width: 50%; }
-    section .items .item figcaption .quote .quotes {
-      display: inline-block;
-      width: 20%;
-      padding-left: 0.5rem; }
-  section .items .item figcaption .text__title {
-    color: #9EA2AE; }
+section .items .item {
+  width: 431px;
+  height: 241px; }
+  section .items .item img {
+    display: block;
+    margin: auto;
+    margin-bottom: -2rem; }
+  section .items .item figcaption {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 0.2rem; }
+    section .items .item figcaption .quote {
+      width: 50%; }
+      section .items .item figcaption .quote .quotes {
+        display: inline-block;
+        width: 20%;
+        padding-left: 0.5rem; }
+    section .items .item figcaption .text__title {
+      color: #9EA2AE; }

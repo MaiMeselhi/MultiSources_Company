@@ -1,23 +1,17 @@
-@import "./vars";
+@import './vars';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap');
 
-@font-face {
-  font-family: NotoKufiArabic-Regular;
-  src: url(../../Font/NotoKufiArabic-Regular.ttf);
-  font-family: NotoKufiArabic-Bold;
-  src: url(../assets/Font/NotoKufiArabic-Bold.ttf);
+* {
+  font-family: 'Noto Kufi Arabic', sans-serif;
 }
 
-body {
-  font-family: NotoKufiArabic-Regular, sans-serif;
-}
 /*************
     body
 *************/
 p {
-  font-size: 0.9rem;
+  font-size: 12px;
   text-align: right;
   padding-top: 0;
-
 }
 section {
   header {
@@ -29,7 +23,7 @@ section {
     }
     .headerLine::after,
     .headerLine::before {
-      content: "";
+      content: '';
       position: absolute;
       margin: auto;
       height: 1px;
@@ -81,16 +75,17 @@ li {
   }
 }
 
-
 footer {
   .social {
     li {
       display: inline-block;
     }
   }
-
+  .footer_desc {
+    font-size: 10px;
+  }
   .links__list {
-    list-style: disc url("38specialPlusP.gif");
+    list-style: disc url('38specialPlusP.gif');
     direction: rtl;
     margin-right: 1rem;
 
@@ -104,49 +99,42 @@ footer {
   padding-left: 8rem;
 }
 
-.logo_title{
+.logo_title {
   line-height: 0;
 }
 
 @include mobile-xs {
-
-
-
   .social {
     text-align: center;
   }
-  .footer_logo{
+  .footer_logo {
     flex-wrap: wrap;
   }
-  .bord{
-   display: none;
-
+  .bord {
+    display: none;
   }
-.arrow img{
-  display: block;
-margin: 0 auto;
-}
-.co_logo{
-  border-top: 1px solid
-
-  #ececf4;
-}
-.video_header{
-  font-size: 1.25rem;
-}
-.video_desc{
-  width: 8rem;
-  height: 2.5rem;
-}
-.push{
-  width: 1rem;
-  padding-bottom: 1rem;
-}
-.video_watch{
-  font-size: 1.1rem;
-  margin-top: 0.25rem;
-
-}
+  .arrow img {
+    display: block;
+    margin: 0 auto;
+  }
+  .co_logo {
+    border-top: 1px solid #ececf4;
+  }
+  .video_header {
+    font-size: 1.25rem;
+  }
+  .video_desc {
+    width: 8rem;
+    height: 2.5rem;
+  }
+  .push {
+    width: 1rem;
+    padding-bottom: 1rem;
+  }
+  .video_watch {
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+  }
 }
 @include mobile-sm {
   .paragraph {
@@ -159,11 +147,11 @@ margin: 0 auto;
   .location {
     padding: 0 1rem;
   }
-  .arrow img{
+  .arrow img {
     display: block;
-  margin: 0 auto;
+    margin: 0 auto;
   }
-  .overlay-content h2{
+  .overlay-content h2 {
     font-size: 1.25rem;
   }
 }
@@ -174,10 +162,8 @@ margin: 0 auto;
   .social {
     text-align: center;
   }
-  .arrow img{
+  .arrow img {
     display: block;
-  margin: 0 auto;
+    margin: 0 auto;
   }
 }
-
-
