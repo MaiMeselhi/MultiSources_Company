@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: NotoKufiArabic-Regular;
-  src: url(../assets/Font/NotoKufiArabic-Regular.ttf);
+  src: url(../../Font/NotoKufiArabic-Regular.ttf);
   font-family: NotoKufiArabic-Bold;
   src: url(../assets/Font/NotoKufiArabic-Bold.ttf);
 }
 
 body {
-  font-family: NotoKufiArabic-Bold, sans-serif;
+  font-family: NotoKufiArabic-Regular, sans-serif;
 }
 /*************
     body
@@ -80,6 +80,8 @@ li {
     color: #000;
   }
 }
+
+
 footer {
   .social {
     li {
@@ -90,6 +92,7 @@ footer {
   .links__list {
     list-style: disc url("38specialPlusP.gif");
     direction: rtl;
+    margin-right: 1rem;
 
     a {
       padding: 0;
@@ -104,11 +107,11 @@ footer {
 .logo_title{
   line-height: 0;
 }
+
 @include mobile-xs {
-  .paragraph {
-    text-align: right;
-    padding-left: 1.5rem;
-  }
+
+
+
   .social {
     text-align: center;
   }
@@ -128,6 +131,22 @@ margin: 0 auto;
 
   #ececf4;
 }
+.video_header{
+  font-size: 1.25rem;
+}
+.video_desc{
+  width: 8rem;
+  height: 2.5rem;
+}
+.push{
+  width: 1rem;
+  padding-bottom: 1rem;
+}
+.video_watch{
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+
+}
 }
 @include mobile-sm {
   .paragraph {
@@ -140,6 +159,13 @@ margin: 0 auto;
   .location {
     padding: 0 1rem;
   }
+  .arrow img{
+    display: block;
+  margin: 0 auto;
+  }
+  .overlay-content h2{
+    font-size: 1.25rem;
+  }
 }
 @include tablet {
   .paragraph {
@@ -148,4 +174,10 @@ margin: 0 auto;
   .social {
     text-align: center;
   }
+  .arrow img{
+    display: block;
+  margin: 0 auto;
+  }
 }
+
+
