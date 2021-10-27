@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap");
 * {
-  font-family: 'Noto Kufi Arabic', sans-serif; }
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  box-sizing: border-box; }
 
 /*************
     body
 *************/
-p {
-  font-size: 12px;
-  text-align: right;
-  padding-top: 0; }
-
 section header .headerLine {
   width: 25%;
   height: 5px;
@@ -47,6 +43,21 @@ section header .circle {
 .video_desc {
   width: 12.75rem;
   margin-top: 3rem; }
+
+.dots {
+  display: block;
+  text-align: center; }
+
+.dots .active {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: inline-block;
+  padding-right: 5px; }
+
+.dots .active:hover {
+  background-color: #143266; }
 
 ul {
   padding: 0;
@@ -231,4 +242,7 @@ section .items .item {
         width: 20%;
         padding-left: 0.5rem; }
     section .items .item figcaption .text__title {
-      color: #9ea2ae; }
+      color: #9ea2ae;
+      font-size: 0.65rem; }
+    section .items .item figcaption .text_desc {
+      font-size: 0.65rem; }

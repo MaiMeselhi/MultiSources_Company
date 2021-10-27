@@ -3,16 +3,13 @@
 
 * {
   font-family: 'Noto Kufi Arabic', sans-serif;
+  box-sizing: border-box;
 }
 
 /*************
     body
 *************/
-p {
-  font-size: 12px;
-  text-align: right;
-  padding-top: 0;
-}
+
 section {
   header {
     .headerLine {
@@ -55,6 +52,26 @@ section {
 .video_desc {
   width: 12.75rem;
   margin-top: 3rem;
+}
+.dots {
+	display: block;
+text-align: center;
+
+}
+
+.dots .active {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 1px solid gray;
+	display: inline-block;
+	padding-right: 5px;
+
+}
+
+.dots .active:hover{
+  background-color: #143266;
+
 }
 
 ul {
