@@ -1,19 +1,47 @@
 //from 320 -> 567
 @mixin mobile-xs {
 	@media (min-width: #{$mobile-xs-width}px) and (max-width: #{$mobile-sm-width - $lessThan}px) {
-		@content;
+	  @content;
 	}
-}
-//from 567 -> 767
-@mixin mobile-sm {
+ }
+ //from 567 -> 767
+ @mixin mobile-sm {
 	@media (min-width: #{$mobile-sm-width}px) and (max-width: #{$tablet-sm-width - $lessThan}px) {
-		@content;
+	  @content;
 	}
-}
-
-//from 768 -> 991
-@mixin tablet {
+ }
+ //from 768 -> 991
+ @mixin tablet {
 	@media (min-width: #{$tablet-sm-width}px) and (max-width: #{$tablet-lg-width - $lessThan}px) {
-		@content;
+	  @content;
 	}
-}
+ }
+ //from 992 -> 1199
+ @mixin desktop {
+	@media (min-width: #{$tablet-lg-width}px) and (max-width: #{$desktop-sm-width - $lessThan}px) {
+	  @content;
+	}
+ }
+ // from 1200 ->  ∞
+ @mixin desktop-lg {
+	@media (min-width: #{$desktop-sm-width}px) {
+	  @content;
+	}
+ }
+//OVERLAY
+@mixin overlay($color: $overlayColor) {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: $overlayColor;
+ }
+ @mixin overlay-content ($color : $primaryColor){
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: $primaryColor;
+	text-align: center;
+	transform: translate(-50%, -50%);
+ }

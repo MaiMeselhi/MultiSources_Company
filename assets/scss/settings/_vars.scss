@@ -1,22 +1,14 @@
-$mainColor: #c3194d;
-$secColor: #514596;
-$gradient-lay: linear-gradient(to right, $mainColor, $secColor);
+$primaryColor : #fff;
+$secColor:#949494;
+$overlayColor: rgba(0, 0, 0, 0.5);
 //media queries
 $mobile-xs-width: 320;
 $mobile-sm-width: 568;
 $tablet-sm-width: 768;
 $tablet-lg-width: 992;
+$tablet-lg-width: 992;
+$desktop-sm-width: 1200;
 $lessThan: 1;
-//OVERLAY
-@mixin overlay($color: $gradient-lay) {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: $gradient-lay;
-  opacity: 0.8;
-  z-index: 0;
-}
+
 
 

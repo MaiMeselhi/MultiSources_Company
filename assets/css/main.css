@@ -1,72 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap");
 * {
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   box-sizing: border-box; }
 
-/*************
-    body
-*************/
-section header .headerLine {
+h5 {
+  font-size: 1rem; }
+
+.headerLine {
   width: 25%;
   height: 5px;
   position: relative;
   margin: auto; }
 
-section header .headerLine::after,
-section header .headerLine::before {
-  content: '';
+.headerLine::after,
+.headerLine::before {
+  content: "";
   position: absolute;
   margin: auto;
   height: 1px;
   width: 45%;
-  background-color: #707070; }
+  background-color: #949494; }
 
-section header .headerLine::after {
+.headerLine::after {
   left: 0;
   top: 0; }
 
-section header .headerLine::before {
+.headerLine::before {
   right: 0; }
 
-section header .circle {
+.circle {
   height: 1px;
   width: 1px;
-  border: 2px solid #707070;
+  border: 2px solid #949494;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   margin: auto;
   border-radius: 50%;
-  background-color: #707070; }
+  background-color: #949494; }
 
-.video_desc {
-  width: 12.75rem;
-  margin-top: 3rem; }
-
-.dots {
-  display: block;
-  text-align: center; }
-
-.dots .active {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: 1px solid gray;
-  display: inline-block;
-  padding-right: 5px; }
-
-.dots .active:hover {
-  background-color: #143266; }
+.item {
+  width: 26.9375rem;
+  height: 15.0625rem; }
 
 ul {
   padding: 0;
   margin: 0;
   list-style: none; }
 
-/*************
-    a (link)
-*************/
 a {
   outline: none;
   color: inherit;
@@ -94,8 +76,12 @@ footer .links__list {
   footer .links__list a {
     padding: 0; }
 
+.footer_logo {
+  display: flex; }
+
 .paragraph {
-  padding-left: 16rem; }
+  padding-left: 16rem;
+  font-size: 12px; }
 
 .logo_title {
   line-height: 0;
@@ -112,7 +98,8 @@ footer .links__list {
     display: block;
     margin: 0 auto; }
   .co_logo {
-    border-top: 1px solid #ececf4; }
+    border-top: 1px solid #ececf4;
+    margin: 0; }
   .video_header {
     font-size: 1.25rem; }
   .video_desc {
@@ -120,12 +107,14 @@ footer .links__list {
     margin-top: 1rem; }
   .push {
     width: 1rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    padding-top: 0.25rem; }
   .video_watch {
     font-size: 1.1rem;
     margin-top: 0.25rem; }
   .paragraph {
-    padding: 0; } }
+    padding: 0;
+    font-size: 12px; } }
 
 @media (min-width: 568px) and (max-width: 767px) {
   .social {
@@ -151,9 +140,14 @@ footer .links__list {
   .paragraph {
     padding: 0; }
   .co_logo {
-    margin-left: 3rem; } }
+    margin: 0 30%; }
+  .footer_logo {
+    flex-wrap: wrap; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .item {
+    width: 100%;
+    margin: 4rem 0; }
   .paragraph {
     padding-left: 0.5rem; }
   .social {
@@ -162,9 +156,17 @@ footer .links__list {
     display: block;
     margin: 0 auto; }
   .co_logo {
-    margin-left: 0; }
+    margin-left: 0; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
   .item {
-    margin: 1rem auto; } }
+    width: 33%;
+    margin: 3rem auto; }
+  .paragraph {
+    padding-left: 3rem;
+    font-size: 12px; }
+  .footer_logo {
+    text-align: start; } }
 
 .video_overlay {
   background-size: cover;
@@ -173,13 +175,17 @@ footer .links__list {
 .video_img {
   margin: 0; }
 
+.video_desc {
+  width: 12.75rem;
+  margin-top: 3rem; }
+
 .Overlay {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
   top: 0;
-  left: 0; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .overlay-content {
   position: absolute;
@@ -189,60 +195,41 @@ footer .links__list {
   text-align: center;
   transform: translate(-50%, -50%); }
 
-.sponsors .row .client:hover img {
+.sponsors .row .client img {
+  transition: all 1s; }
+
+.sponsors .row .client img:hover {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; }
 
-section header .headerLine {
-  width: 18.25rem;
-  height: 0;
-  position: relative; }
-
-section header .headerLine::after,
-section header .headerLine::before {
-  content: '';
-  position: absolute;
+section .items .item img {
+  display: block;
   margin: auto;
-  height: 2px;
-  top: 0;
-  width: 45%;
-  background-color: #7b808e; }
+  margin-bottom: -2rem; }
 
-section header .headerLine::after {
-  left: 0; }
+section .items .item figcaption {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 0.2rem; }
+  section .items .item figcaption .quote {
+    width: 50%; }
+    section .items .item figcaption .quote .quotes {
+      display: inline-block;
+      width: 20%;
+      padding-left: 0.5rem; }
+  section .items .item figcaption .text__title {
+    color: #949494;
+    font-size: 0.65rem; }
+  section .items .item figcaption .text_desc {
+    font-size: 0.65rem; }
 
-section header .headerLine::before {
-  right: 0; }
-
-section header .circle {
-  height: 0;
-  width: 0;
-  border: 2px solid #7b808e;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  border-radius: 50%;
-  background-color: #707070; }
-
-section .items .item {
-  width: 431px;
-  height: 241px; }
-  section .items .item img {
-    display: block;
-    margin: auto;
-    margin-bottom: -2rem; }
-  section .items .item figcaption {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    border-radius: 0.2rem; }
-    section .items .item figcaption .quote {
-      width: 50%; }
-      section .items .item figcaption .quote .quotes {
-        display: inline-block;
-        width: 20%;
-        padding-left: 0.5rem; }
-    section .items .item figcaption .text__title {
-      color: #9ea2ae;
-      font-size: 0.65rem; }
-    section .items .item figcaption .text_desc {
-      font-size: 0.65rem; }
+section .dots {
+  display: block;
+  text-align: center; }
+  section .dots .active {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #949494;
+    display: inline-block;
+    padding-right: 5px; }
+  section .dots .active:hover {
+    background-color: #143266; }

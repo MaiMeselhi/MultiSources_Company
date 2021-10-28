@@ -5,20 +5,15 @@
 .video_img {
   margin: 0;
 }
+
+.video_desc {
+  width: 12.75rem;
+  margin-top: 3rem;
+}
 .Overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
+@include overlay();
 }
 .overlay-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #fff;
-  text-align: center;
-  transform: translate(-50%, -50%);
+ @include overlay-content;
 }
 

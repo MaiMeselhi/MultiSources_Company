@@ -1,77 +1,52 @@
-@import './vars';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap');
+@import "./vars";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap");
 
 * {
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
   box-sizing: border-box;
 }
-
-/*************
-    body
-*************/
-
-section {
-  header {
-    .headerLine {
-      width: 25%;
-      height: 5px;
-      position: relative;
-      margin: auto;
-    }
-    .headerLine::after,
-    .headerLine::before {
-      content: '';
-      position: absolute;
-      margin: auto;
-      height: 1px;
-      width: 45%;
-      background-color: #707070;
-    }
-
-    .headerLine::after {
-      left: 0;
-      top: 0;
-    }
-    .headerLine::before {
-      right: 0;
-    }
-    .circle {
-      height: 1px;
-      width: 1px;
-      border: 2px solid #707070;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      margin: auto;
-      border-radius: 50%;
-      background-color: #707070;
-    }
-  }
+h5 {
+  font-size: 1rem;
 }
-.video_desc {
-  width: 12.75rem;
-  margin-top: 3rem;
+.headerLine {
+  width: 25%;
+  height: 5px;
+  position: relative;
+  margin: auto;
 }
-.dots {
-	display: block;
-text-align: center;
-
+.headerLine::after,
+.headerLine::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 1px;
+  width: 45%;
+  background-color: $secColor;
 }
 
-.dots .active {
-	height: 20px;
-	width: 20px;
-	border-radius: 50%;
-	border: 1px solid gray;
-	display: inline-block;
-	padding-right: 5px;
-
+.headerLine::after {
+  left: 0;
+  top: 0;
+}
+.headerLine::before {
+  right: 0;
+}
+.circle {
+  height: 1px;
+  width: 1px;
+  border: 2px solid $secColor;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 50%;
+  background-color: $secColor;
 }
 
-.dots .active:hover{
-  background-color: #143266;
-
+.item {
+  width: 26.9375rem;
+  height: 15.0625rem;
 }
 
 ul {
@@ -79,28 +54,21 @@ ul {
   margin: 0;
   list-style: none;
 }
-
-/*************
-    a (link)
-*************/
 a {
   outline: none;
   color: inherit;
   padding: 0 0.5rem;
   text-decoration: none;
 }
-
-.link{
-  color:#949494;
+.link {
+  color: $secColor;
 }
-
 li {
   padding: 0.25rem 0;
   img {
     color: #000;
   }
 }
-
 footer {
   .social {
     li {
@@ -111,7 +79,7 @@ footer {
     font-size: 10px;
   }
   .links__list {
-    list-style: disc url('38specialPlusP.gif');
+    list-style: disc url("38specialPlusP.gif");
     direction: rtl;
     margin-right: 1rem;
 
@@ -120,16 +88,18 @@ footer {
     }
   }
 }
-
+.footer_logo {
+  display: flex;
+}
 .paragraph {
-      padding-left: 16rem;
+  padding-left: 16rem;
+  font-size: 12px;
 }
 
 .logo_title {
   line-height: 0;
   font-size: 15px;
 }
-
 @include mobile-xs {
   .social {
     text-align: center;
@@ -146,24 +116,27 @@ footer {
   }
   .co_logo {
     border-top: 1px solid #ececf4;
+    margin: 0;
   }
   .video_header {
     font-size: 1.25rem;
   }
   .video_desc {
     height: 2.5rem;
-    margin-top:1rem;
+    margin-top: 1rem;
   }
   .push {
     width: 1rem;
     padding-bottom: 1rem;
+    padding-top: 0.25rem;
   }
   .video_watch {
     font-size: 1.1rem;
     margin-top: 0.25rem;
   }
-  .paragraph{
+  .paragraph {
     padding: 0;
+    font-size: 12px;
   }
 }
 @include mobile-sm {
@@ -185,7 +158,7 @@ footer {
   }
   .video_desc {
     height: 2.5rem;
-    margin-top:1rem;
+    margin-top: 1rem;
   }
   .push {
     width: 1rem;
@@ -195,14 +168,21 @@ footer {
     font-size: 1.1rem;
     margin-top: 0.25rem;
   }
-  .paragraph{
+  .paragraph {
     padding: 0;
   }
   .co_logo {
-    margin-left: 3rem;
-}
+    margin: 0 30%;
+  }
+  .footer_logo {
+    flex-wrap: wrap;
+  }
 }
 @include tablet {
+  .item {
+    width: 100%;
+    margin: 4rem 0;
+  }
   .paragraph {
     padding-left: 0.5rem;
   }
@@ -215,8 +195,19 @@ footer {
   }
   .co_logo {
     margin-left: 0;
+  }
 }
-.item{
-  margin: 1rem auto;
-}
+@include desktop {
+  .item {
+    width: 33%;
+    margin: 3rem auto;
+  }
+  .paragraph {
+    padding-left: 3rem;
+
+    font-size: 12px;
+  }
+  .footer_logo {
+    text-align: start;
+  }
 }

@@ -1,9 +1,12 @@
 .sponsors {
    .row {
-     .client:hover {
+     .client{
        img {
-         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+          transition: all 1s;
        }
+       img:hover {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
      }
    }
  }
+}
