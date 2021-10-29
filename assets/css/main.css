@@ -209,8 +209,12 @@ footer .links__list {
   margin: auto;
   margin-bottom: -2rem; }
 
+.item {
+  margin-bottom: 3rem; }
+
 figcaption {
   border-radius: 0.2rem;
+  border: 1px solid #D6D9E1;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 40px 0px; }
 
 .quote {
