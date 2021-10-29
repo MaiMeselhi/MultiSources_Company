@@ -40,10 +40,6 @@ h5 {
   border-radius: 50%;
   background-color: #949494; }
 
-.item {
-  width: 26.9375rem;
-  height: 15.0625rem; }
-
 ul {
   padding: 0;
   margin: 0;
@@ -111,6 +107,29 @@ li {
 @media (min-width: 568px) and (max-width: 767px) {
   .video_header {
     font-size: 1.25rem; } }
+
+.team_desc {
+  color: #949494; }
+
+.team_item {
+  position: relative; }
+
+.socials_link {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  visibility: hidden; }
+
+/* Style the icon bar links */
+.socials_link a {
+  display: block;
+  padding: 0.5rem 0 0 0.5rem;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px; }
+
+.team_item:hover .socials_link {
+  visibility: visible; }
 
 .sponsors .row .client img {
   transition: all 1s; }
@@ -212,7 +231,7 @@ footer .links__list {
 .item {
   margin-bottom: 3rem; }
 
-figcaption {
+.desc {
   border-radius: 0.2rem;
   border: 1px solid #D6D9E1;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 40px 0px; }

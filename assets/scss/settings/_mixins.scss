@@ -28,6 +28,22 @@
 	  @content;
 	}
  }
+ @mixin desktop-lg {
+	@media (min-width: #{$desktop-sm-width}px) {
+	  @content;
+	}
+ }
+ @mixin from-desktop-lg {
+	@media (min-width: #{$desktop-lg-width}px) {
+		@content;
+	}
+}
+ // from 1200 ->  ∞
+ @mixin desktop-lg {
+	@media (min-width: #{$desktop-sm-width}px) {
+	  @content;
+	}
+ }
 //OVERLAY
 @mixin overlay($color: $overlayColor) {
 	position: absolute;

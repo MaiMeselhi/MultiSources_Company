@@ -1,0 +1,31 @@
+.team_desc{
+   color: $secColor;
+}
+
+.team_item{
+   position: relative;
+}
+
+.socials_link {
+   position: absolute;
+   top: 25%;
+
+   transform: translateY(-50%);
+
+   visibility: hidden;
+ }
+
+ /* Style the icon bar links */
+ .socials_link a {
+   display: block;
+  padding: 0.5rem 0 0 0.5rem;
+   transition: all 0.3s ease;
+   color: white;
+   font-size: 20px;
+
+ }
+
+ .team_item:hover .socials_link{
+   visibility: visible;
+
+}
