@@ -63,6 +63,61 @@ li {
   li img {
     color: #000; }
 
+.video {
+  height: 100vh;
+  min-height: 500px;
+  background: url("../../assets/imgs/video.svg") center center;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  z-index: 1; }
+
+.video::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 0; }
+
+.video_header {
+  text-align: center;
+  color: #fff; }
+
+.video_content {
+  position: static;
+  z-index: 1; }
+
+.video_play {
+  align-items: baseline;
+  padding: 0.5rem 0.5rem;
+  margin-top: 3rem; }
+
+.play {
+  margin: 0  0.5rem 0 0; }
+
+.video_img {
+  margin: 0; }
+
+.video_watch {
+  color: #fff; }
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .video_header {
+    font-size: 1.25rem; } }
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .video_header {
+    font-size: 1.25rem; } }
+
+.sponsors .row .client img {
+  transition: all 1s; }
+
+.sponsors .row .client img:hover {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; }
+
 footer .social li {
   display: inline-block; }
 
@@ -102,16 +157,6 @@ footer .links__list {
     margin: 0; }
   .video_header {
     font-size: 1.25rem; }
-  .video_desc {
-    height: 2.5rem;
-    margin-top: 1rem; }
-  .push {
-    width: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 0.25rem; }
-  .video_watch {
-    font-size: 1.1rem;
-    margin-top: 0.25rem; }
   .paragraph {
     padding: 0;
     font-size: 12px; } }
@@ -128,15 +173,6 @@ footer .links__list {
     margin: 0 auto; }
   .video_header {
     font-size: 1.25rem; }
-  .video_desc {
-    height: 2.5rem;
-    margin-top: 1rem; }
-  .push {
-    width: 1rem;
-    padding-bottom: 1rem; }
-  .video_watch {
-    font-size: 1.1rem;
-    margin-top: 0.25rem; }
   .paragraph {
     padding: 0; }
   .co_logo {
@@ -168,68 +204,69 @@ footer .links__list {
   .footer_logo {
     text-align: start; } }
 
-.video_overlay {
-  background-size: cover;
-  position: relative; }
-
-.video_img {
-  margin: 0; }
-
-.video_desc {
-  width: 12.75rem;
-  margin-top: 3rem; }
-
-.Overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.overlay-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #fff;
-  text-align: center;
-  transform: translate(-50%, -50%); }
-
-.sponsors .row .client img {
-  transition: all 1s; }
-
-.sponsors .row .client img:hover {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; }
-
-section .items .item img {
+.item img {
   display: block;
   margin: auto;
   margin-bottom: -2rem; }
 
-section .items .item figcaption {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  border-radius: 0.2rem; }
-  section .items .item figcaption .quote {
-    width: 50%; }
-    section .items .item figcaption .quote .quotes {
-      display: inline-block;
-      width: 20%;
-      padding-left: 0.5rem; }
-  section .items .item figcaption .text__title {
-    color: #949494;
-    font-size: 0.65rem; }
-  section .items .item figcaption .text_desc {
-    font-size: 0.65rem; }
+figcaption {
+  border-radius: 0.2rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 40px 0px; }
 
-section .dots {
-  display: block;
-  text-align: center; }
-  section .dots .active {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 1px solid #949494;
-    display: inline-block;
-    padding-right: 5px; }
-  section .dots .active:hover {
-    background-color: #143266; }
+.quote {
+  width: 50%;
+  margin: 0 -5rem;
+  padding-top: 0.6rem; }
+
+.quotes {
+  display: inline-block;
+  width: 20%;
+  padding-left: 0.5rem; }
+
+.text__title {
+  color: #949494;
+  font-size: 0.65rem; }
+
+.text_desc {
+  font-size: 0.65rem; }
+
+.carousel-indicators {
+  top: auto;
+  left: 0;
+  bottom: -70px; }
+
+.carousel-indicators .slider {
+  border: 1px solid #949494;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem; }
+
+.carousel-indicators .active {
+  background-color: #143266;
+  border: 1px solid #143266; }
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .quote {
+    margin: 0 -4rem; }
+  .item {
+    margin: 1rem 0; } }
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .quote {
+    margin: 0 -4rem; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .quote {
+    margin: 0 -4rem; }
+  .item {
+    width: 90%;
+    margin: 3rem auto; }
+  .item:first-child {
+    margin-top: 0; }
+  .item:last-child {
+    margin-bottom: 6rem; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .quote {
+    margin: 0  -3rem; } }

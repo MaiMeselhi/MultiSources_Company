@@ -5,7 +5,7 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href= "https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,21 +14,14 @@
       <title></title>
    </head>
    <body>
-      <section class="video py-5">
-         <div class="video_overlay">
-            <figure class="video_img" >
-               <img class="w-100"src="assets/imgs/video.svg">
-            </figure>
-            <div class="Overlay">
-               <div class="overlay-content">
-                  <h2 class="video_header">تعرف اكثر علينا</h2>
-                  <div class="video_desc d-flex justify-content-center border rounded ">
-                     <figure class="push my-2 ms-3">
-                        <img class="w-100" src="assets/imgs/Polygon 8.svg">
-                     </figure>
-                     <h4 class="video_watch pt-2">شاهد من هنا</h4>
-                  </div>
-               </div>
+      <section class="video overlay d-flex align-center justify-content-center  py-5">
+         <div class="video_content">
+            <h2 class="video_header">تعرف اكثر علينا</h2>
+            <div class="video_play d-flex justify-content-center border rounded ">
+               <figure class="play">
+                  <img class="w-100" src="assets/imgs/Polygon 8.svg">
+               </figure>
+               <h4 class="video_watch">شاهد من هنا</h4>
             </div>
          </div>
       </section>
@@ -76,59 +69,265 @@
             </div>
          </header>
          <div class="container">
-            <div class="row items justify-content-between">
-               <figure class="col-lg-3 item mg">
-                  <img src="assets/imgs/m1.jpg" class="w-25" />
-                  <figcaption>
-                     <figure class="quote">
-                        <img src="assets/imgs/quote.jpg" class="quotes" />
-                     </figure>
-                     <h5 class="text-center">محمد محمود</h5>
-                     <p class="text-center text__title">مدير شركة</p>
-                     <p class="text_desc text-start px-1 pb-4">
-                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                        سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
-                        الفقرات في الصفحة التي يقرأها
-                     </p>
-                  </figcaption>
-               </figure>
-               <figure class="col-lg-3  mg item">
-                  <img src="assets/imgs/m2.jpg" class="w-25" />
-                  <figcaption>
-                     <figure class="quote">
-                        <img src="assets/imgs/quote.jpg" class="quotes" />
-                     </figure>
-                     <h5 class="text-center">أحمد محمد</h5>
-                     <p class="text-center text__title">مدير شركة</p>
-                     <p class="text_desc text-start px-1 pb-4 ">
-                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                        سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
-                        الفقرات في الصفحة التي يقرأها
-                     </p>
-                  </figcaption>
-               </figure>
-               <figure class="col-lg-3  mg item">
-                  <img src="assets/imgs/m3.jpg" class="w-25" />
-                  <figcaption>
-                     <figure class="quote">
-                        <img src="assets/imgs/quote.jpg" class="quotes" />
-                     </figure>
-                     <h5 class="text-center">على أحمد</h5>
-                     <p class="text-center text__title">مدير شركة</p>
-                     <p class="text_desc text-start px-1 pb-4">
-                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
-                        سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
-                        الفقرات في الصفحة التي يقرأها
-                     </p>
-                  </figcaption>
-               </figure>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="slider active" aria-current="true" aria-label="Slide 1"></li>
+                        <li class="slider" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                        <li class="slider" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                        <li class="slider" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></li>
+                     </ol>
+                     <div class="carousel-inner  ">
+                        <div class="carousel-item  active">
+                           <div class="row items justify-content-between">
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager1.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager2.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager3.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                           </div>
+                        </div>
+                        <div class="carousel-item col-lg-3">
+                           <div class="row items justify-content-between">
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager1.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager2.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager3.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                           </div>
+                        </div>
+                        <div class="carousel-item col-lg-3">
+                           <div class="row items justify-content-between">
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager1.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager2.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager3.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                           </div>
+                        </div>
+                        <div class="carousel-item col-lg-3">
+                           <div class="row items justify-content-between">
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager1.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager2.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                              <figure class="col-lg-3 item mg">
+                                 <img src="assets/imgs/manager3.jpg" class="w-25" />
+                                 <figcaption>
+                                    <div class="d-flex">
+                                       <figure class="quote">
+                                          <img src="assets/imgs/quote.jpg" class="quotes" />
+                                       </figure>
+                                    </div>
+                                    <div>
+                                       <h5 class="text-center pt-5">محمد محمود</h5>
+                                       <p class="text-center text__title">مدير شركة</p>
+                                    </div>
+                                    <p class="text_desc text-start px-2 pb-4">
+                                       هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                       سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                                       الفقرات في الصفحة التي يقرأها
+                                    </p>
+                                 </figcaption>
+                              </figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <ul class="dots pt-5" id="dots_list">
-               <li class="active"></li>
-               <li class="active"></li>
-               <li class="active"></li>
-               <li class="active"></li>
-            </ul>
+         </div>
          </div>
       </section>
       <footer class="text-start pt-5">
@@ -242,8 +441,8 @@
       </div>
       </footer>
       </footer>
-      <script src="./assets/js/jQuery-3-4-1.min.js"></script>
-      <script src="./assets/js/bootstrap.min.js"></script>
-      <script src="./assets/js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="/assets/js/main.js"></script>
    </body>
 </html>

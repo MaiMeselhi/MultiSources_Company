@@ -1,19 +1,52 @@
-.video_overlay {
+.video{
+  height: 100vh;
+  min-height: 500px;
+  background:url("../../assets/imgs/video.svg") center center;
   background-size: cover;
   position: relative;
+  align-items: center;
+  z-index: 1;
+}
+.video::after{
+  content: "";
+  @include overlay();
+  z-index: 0;
+}
+.video_header{
+  text-align: center;
+  color: $primaryColor;
+}
+.video_content{
+position: static;
+z-index: 1;
+}
+.video_play {
+  align-items: baseline;
+  padding: 0.5rem 0.5rem ;
+  margin-top: 3rem;
+}
+.play{
+  margin: 0  0.5rem 0 0;
+
+
 }
 .video_img {
   margin: 0;
 }
+.video_watch{
+  color: $primaryColor;
 
-.video_desc {
-  width: 12.75rem;
-  margin-top: 3rem;
 }
-.Overlay {
-@include overlay();
-}
-.overlay-content {
- @include overlay-content;
-}
+@include mobile-xs {
 
+  .video_header {
+    font-size: 1.25rem;
+  }
+
+}
+@include mobile-sm {
+
+  .video_header {
+    font-size: 1.25rem;
+  }
+}
