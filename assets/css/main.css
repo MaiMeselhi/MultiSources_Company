@@ -312,3 +312,7 @@ footer .links__list {
 @media (min-width: 992px) and (max-width: 1199px) {
   .quote {
     margin: 0  -3rem; } }
+
+@media (min-width: 1200px) {
+  .quote {
+    margin: 0  -4rem; } }
