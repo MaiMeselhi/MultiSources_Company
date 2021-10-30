@@ -257,14 +257,10 @@ footer .links__list {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 40px 0px; }
 
 .quote {
-  width: 50%;
-  margin: 0 -5rem;
-  padding-top: 0.6rem; }
+  width: 25%; }
 
 .quotes {
-  display: inline-block;
-  width: 20%;
-  padding-left: 0.5rem; }
+  width: 50%; }
 
 .text__title {
   color: #949494;
@@ -290,18 +286,10 @@ footer .links__list {
   border: 1px solid #143266; }
 
 @media (min-width: 320px) and (max-width: 567px) {
-  .quote {
-    margin: 0 -4rem; }
   .item {
     margin: 1rem 0; } }
 
-@media (min-width: 568px) and (max-width: 767px) {
-  .quote {
-    margin: 0 -4rem; } }
-
 @media (min-width: 768px) and (max-width: 991px) {
-  .quote {
-    margin: 0 -4rem; }
   .item {
     width: 90%;
     margin: 3rem auto; }
@@ -310,10 +298,5 @@ footer .links__list {
   .item:last-child {
     margin-bottom: 6rem; } }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .quote {
-    margin: 0  -3rem; } }
-
 @media (min-width: 1200px) {
-  .quote {
-    margin: 0  -4rem; } }
+  margin: 0 10rem; }

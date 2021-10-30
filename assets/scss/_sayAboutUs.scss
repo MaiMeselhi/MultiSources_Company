@@ -13,17 +13,12 @@
   box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 40px 0px;
 
 }
-.quote {
+.quote{
+  width: 25%;
+}
+.quotes{
   width: 50%;
-  margin: 0 -5rem;
-  padding-top: 0.6rem;
 }
-.quotes {
-  display: inline-block;
-  width: 20%;
-  padding-left: 0.5rem;
-}
-
 .text__title {
   color: $secColor;
   font-size: 0.65rem;
@@ -51,22 +46,16 @@
 }
 
 @include mobile-xs {
-  .quote {
-    margin: 0 -4rem;
-  }
+
   .item{
     margin:1rem 0;
   }
 }
 @include mobile-sm {
-  .quote {
-    margin: 0 -4rem;
-  }
+
 }
 @include tablet {
-  .quote {
-    margin: 0 -4rem;
-  }
+
   .item{
     width: 90%;
 
@@ -79,14 +68,8 @@
   margin-bottom: 6rem;
 }
 }
-@include desktop{
-  .quote{
-    margin: 0  -3rem;
-  }
-}
+
 @include desktop-lg{
-  .quote{
-    margin: 0  -4rem;
-  }
+  margin:0 10rem;
 
 }
