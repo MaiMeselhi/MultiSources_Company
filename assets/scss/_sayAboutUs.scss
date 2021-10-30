@@ -32,12 +32,12 @@
   font-size: 0.65rem;
 }
 
-.carousel-indicators {
+.section1 .carousel-indicators{
   top: auto;
   left: 0;
   bottom: -70px;
 }
-.carousel-indicators .slider {
+.section1 .carousel-indicators .slider {
   border: 1px solid $secColor;
   background-color: #fff;
   border-radius: 50%;
@@ -45,7 +45,7 @@
   height: 1rem;
 }
 
-.carousel-indicators .active {
+.section1 .carousel-indicators .active {
   background-color: #143266;
   border: 1px solid #143266;
 }
