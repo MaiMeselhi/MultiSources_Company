@@ -21,7 +21,7 @@ footer {
    display: flex;
  }
  .paragraph {
-   padding-left: 16rem;
+   padding:0 6rem;
    font-size: 12px;
  }
 
@@ -31,6 +31,7 @@ footer {
  }
  .arrow{
    cursor: pointer;
+
  }
  @include mobile-xs {
    .social {
