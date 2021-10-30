@@ -117,6 +117,7 @@ li {
 .socials_link {
   position: absolute;
   top: 25%;
+  left: 5%;
   transform: translateY(-50%);
   visibility: hidden; }
 
