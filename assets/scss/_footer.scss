@@ -29,6 +29,9 @@ footer {
    line-height: 0;
    font-size: 15px;
  }
+ .arrow{
+   cursor: pointer;
+ }
  @include mobile-xs {
    .social {
      text-align: center;
